@@ -22,13 +22,13 @@ const Navbar = () => {
           <a href='/'>Home</a>
         </li>
         <li>
-          <a href='#gallery'>Gallery</a>
+          <a href='#gallery'>Get Involved</a>
         </li>
         <li>
-          <a href='#deals'>Deals</a>
+          <a href='#deals'>Prayer</a>
         </li>
         <li>
-          <a href='#contact'>Contact</a>
+          <a href='#contact'>About Us</a>
         </li>
       </ul>
       <div className='flex justify-between'>
@@ -55,13 +55,13 @@ const Navbar = () => {
             <a href='/'>Home</a>
           </li>
           <li className='text-2xl py-8'>
-            <a href='#gallery'>Gallery</a>
+            <a href='#gallery'>Get Involved</a>
           </li>
           <li className='text-2xl py-8'>
-            <a href='#deals'>Deals</a>
+            <a href='#deals'>Prayer</a>
           </li>
           <li className='text-2xl py-8'>
-            <a href='#contact'>Contact</a>
+            <a href='#contact'>About</a>
           </li>
         </ul>
       </div>

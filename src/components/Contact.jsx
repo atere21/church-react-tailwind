@@ -7,7 +7,7 @@ const Contact = () => {
       <p className='text-center text-gray-700 py-2'>We're standing by!</p>
       <div className='grid md:grid-cols-2'>
         <img
-          src='https://images.unsplash.com/photo-1538964173425-93884d739596?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80'
+          src='https://media.istockphoto.com/id/847575018/photo/group-of-people-holding-hands-praying-worship-believe.jpg?s=612x612&w=0&k=20&c=hbklAfDraUwmVBE6X0DAOnc9uu_QAIIe4z3drqyM1LA='
           alt='/'
           className='w-full md:h-full object-cover p-2 max-h-[500px] h-[200px]'
         />

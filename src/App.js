@@ -2,11 +2,11 @@ import React from 'react';
 import TopBar from './components/TopBar';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Activities from './components/Activities';
-import Booking from './components/Booking';
 import Gallery from './components/Gallery'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ChurchTimer from './components/ChurchTimer';
+import BibleVerse from './components/BibleVerse';
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
       <TopBar />
       <Navbar />
       <Hero />
-      <Activities />
-      <Booking />
+      <ChurchTimer />
+      <BibleVerse />
       <Gallery />
       <Contact />
       <Footer />

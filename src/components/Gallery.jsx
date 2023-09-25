@@ -1,28 +1,46 @@
-import React from 'react'
+import React from 'react';
+import worship1 from "../assets/church1.jpg";
+import worship2 from "../assets/church2.jpg";
+import worship3 from "../assets/church3.jpg";
+import worship4 from "../assets/church4.png";
+import worship5 from "../assets/prayer.avif";
 
 const Gallery = () => {
-  return (
-    <div id='gallery' className='max-w-[1140px] m-auto w-full px-4 py-16'>
-        <h2 className='text-center text-gray-700 p-4'>Gallery</h2>
-        <div className='grid sm:grid-cols-5 gap-4'>
-            <div className='sm:col-span-3 col-span-2 row-span-2'>
-                <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1615571022219-eb45cf7faa9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80" alt="/" />
+    return (
+        <div name='about' className='max-w-[1400] m-auto py-16 px-4 grid lg:grid-cols-2 gap-4'>
+            {/* left-side */}
+             <div className='grid grid-cols-2 grid-rows-6 h-[200vh]'>
+                <img className='row-span-3 object-cover w-full h-full p-2' src={worship1} alt='/'/>
+                <img className='row-span-2 object-cover w-full h-full p-2' src={worship2} alt='/'/>
+                <img className='row-span-2 object-cover w-full h-full p-2' src={worship4} alt='/'/>
+                <img className='row-span-2 object-cover w-full h-full p-2' src={worship3} alt='/'/>
+                <img className='row-span-3 object-cover w-full h-full p-2' src={worship5} alt='/'/>
+                
+             </div>
+             {/* right-side */}
+             <div className='flex flex-col h-full justify-center'>
+                <h3 className='text-5xl md:text-6xl font-bold '> The Word prayer ministries is a church for </h3>
+                <p className='text-2xl py-6'>everyone, everywhere.</p>
+                <p className='pb-6'>It’s gathering together wherever you live, with other people, in
+                person, to watch weekly services, connect with God through music,
+                and conversations. We strive to create an inviting place, one
+                that’s extremely approachable no matter what you believe, where you
+                come from, or who you know.</p>
+                     <div>
+             <p className='text-xl font-bold text-yellow-500'>New to The Word prayer ministries? </p>
+            
+             <a href='/' target="_blank" rel="noopener noreferrer">
+             <button className=' text--white rounded-md p-2 my-2 w-40 mb-4 text-white cursor-pointer hover:bg-pink-300'>Connect With Us</button>
+             </a>
+    
             </div>
-            <div>
-                <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1594398901394-4e34939a4fd0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="/" />
-            </div>
-            <div>
-                <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="/" />
-            </div>
-            <div>
-                <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1578530332818-6ba472e67b9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1772&q=80" alt="/" />
-            </div>
-            <div>
-                <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1613553507747-5f8d62ad5904?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="/" />
             </div>
         </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Gallery
+export default Gallery;
+
+
+
+
