@@ -21,18 +21,26 @@ const Navbar = () => {
     className='w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white shadow  bg-gray-700/80'>
       <ul className='hidden sm:flex px-4'>
         <li>
-          <a href='/'>Home</a>
+        <NavLink to="/home" activeClassName="active">
+            Home
+          </NavLink>
+         
         </li>
         <li>
-        <a href='/contact' activeClass="active"  smooth={true} duration={500} >
-          Get Involved
-         </a>
+         <NavLink to="/contact" activeClassName="active">
+         Get Involved
+          </NavLink>
+        
         </li>
         <li>
-          <a href='#deals'>Prayer</a>
+        <NavLink to="/contact" activeClassName="active">
+         Prayer
+          </NavLink>
         </li>
         <li>
-          <a href='#contact'>About Us</a>
+        <NavLink to="/contact" activeClassName="active">
+          About Us
+          </NavLink>
         </li>
         
       </ul>
