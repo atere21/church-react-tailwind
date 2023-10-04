@@ -4,8 +4,8 @@ import { TbBuildingChurch } from 'react-icons/tb';
 
 const TopBar = () => {
   return (
-    <div className='flex justify-between items-center px-4 py-2'>
-      <div className='flex items-center'>
+    <div className='flex justify-between shadow drop-shadow-xl items-center px-4 py-2'>
+      <div className='flex items-center mx-4'>
         <TbBuildingChurch size={30} className='text-[var(--primary-dark)] mr-2'  />
         <h1 className='text-sm font-bold text-gray-700'>The Word Prayer Ministries</h1>
       </div>
@@ -18,7 +18,9 @@ const TopBar = () => {
           <AiFillPhone size={20} className='mr-2 text-[var(--primary-dark)]' />
           <p className='text-sm text-gray-700'>+447496021086</p>
         </div>
+        <a href='/prayer'>
         <button>Submit a prayer request</button>
+        </a>
       </div>
     </div>
   );

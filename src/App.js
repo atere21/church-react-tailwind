@@ -1,26 +1,32 @@
 import React from 'react';
-import TopBar from './components/TopBar';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Gallery from './components/Gallery'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import ChurchTimer from './components/ChurchTimer';
-import BibleVerse from './components/BibleVerse';
 
-function App() {
-  return (
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import PrayerRequest from './pages/PrayerRequest';
+import Home from './pages/Home';
+import Navbar from './components/Navbar';
+import TopBar from './components/TopBar';
+import Footer from './components/Footer';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />
+  },
+
+  {
+    path: '/prayer',
+    element: <PrayerRequest />,
+  },
+]);
+
+const App = () => (
+
     <>
-      <TopBar />
-      <Navbar />
-      <Hero />
-      <ChurchTimer />
-      <BibleVerse />
-      <Gallery />
-      <Contact />
-      <Footer />
+      <RouterProvider router={router} />
+      <Footer/>
     </>
   );
-}
+
 
 export default App;
+

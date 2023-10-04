@@ -2,9 +2,9 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div id='contact' className='max-w-[1140px] m-auto w-full p-4 py-16'>
-      <h2 className='text-center text-gray-700'>Send us a message</h2>
-      <p className='text-center text-gray-700 py-2'>We're standing by!</p>
+    <div name='contact' className='max-w-[1140px] m-auto w-full p-4 py-16'>
+      <h2 className='text-center text-gray-700 text-4xl'>Send us a message</h2>
+      <p className='text-center py-2 text-blue-700 font-bold'>We're standing by!</p>
       <div className='grid md:grid-cols-2'>
         <img
           src='https://media.istockphoto.com/id/847575018/photo/group-of-people-holding-hands-praying-worship-believe.jpg?s=612x612&w=0&k=20&c=hbklAfDraUwmVBE6X0DAOnc9uu_QAIIe4z3drqyM1LA='
@@ -18,7 +18,7 @@ const Contact = () => {
             <input className='border m-2 p-2' type='email' placeholder='Email' />
             <input className='border m-2 p-2' type='tel' placeholder='Phone' />
             <input className='border col-span-2 p-2 m-2' type='text' placeholder='Address' />
-            <textarea className='border col-span-2 m-2 p-2' cols='30' rows='10'></textarea>
+            <textarea className='border col-span-2 m-2 p-2 resize-none' cols='30' rows='10'></textarea>
             <button className='col-span-2 m-2'>Submit</button>
           </div>
         </form>

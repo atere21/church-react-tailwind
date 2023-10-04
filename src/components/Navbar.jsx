@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 // import { BsChatSquareDots } from 'react-icons/bs';
 import {
   FaFacebookF,
-  FaTwitter,
-  FaGooglePlusG,
   FaInstagram,
   FaBars,
+  FaYoutube,
+
 } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -16,13 +17,16 @@ const Navbar = () => {
   };
 
   return (
-    <div className='w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white bg-gray-700/80'>
+    <div
+    className='w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white shadow  bg-gray-700/80'>
       <ul className='hidden sm:flex px-4'>
         <li>
           <a href='/'>Home</a>
         </li>
         <li>
-          <a href='#gallery'>Get Involved</a>
+        <a href='/contact' activeClass="active"  smooth={true} duration={500} >
+          Get Involved
+         </a>
         </li>
         <li>
           <a href='#deals'>Prayer</a>
@@ -30,12 +34,18 @@ const Navbar = () => {
         <li>
           <a href='#contact'>About Us</a>
         </li>
+        
       </ul>
       <div className='flex justify-between'>
+        <a href='https://www.facebook.com/profile.php?id=100066928100987'>
         <FaFacebookF className='mx-4' />
-        <FaTwitter className='mx-4' />
-        <FaGooglePlusG className='mx-4' />
+        </a>
+        <a href='https://youtube.com/@TheWordPrayerMinistry?si=5Z5yIuqsFixIGVQg'>
+        <FaYoutube className='mx-4' />
+        </a>
+         <a href='https://instagram.com/twprayerministry?igshid=MzRlODBiNWFlZA=='>
         <FaInstagram className='mx-4' />
+        </a>
       </div>
       {/* Hamburger Icon */}
       <div onClick={handleNav} className='sm:hidden z-10'>

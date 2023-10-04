@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -29,7 +29,7 @@ const Footer = () => {
               Subscribe to our newsletter
             </h6>
             <p className="text-gray-400 py-2">
-              The latest news, articles, and resources, sent to your inbox weekly.
+              Get Sermons, listen to our podcast, we'll have it sent to your inbox weekly.
             </p>
             <form className="flex flex-col sm:flex-row items-center">
               <input
@@ -49,13 +49,13 @@ const Footer = () => {
         <p className="py-4">Designed by Webmuse</p>
         <p className="py-4">&copy; 2023 The Word Prayer Ministries</p>
         <div className="flex justify-center  w-full pt-4 text-2xl cursor-pointer">
-          <a href="/" className="mx-2 hover:text-yellow-600">
-            <BsTwitter />
+          <a href="https://youtube.com/@TheWordPrayerMinistry?si=5Z5yIuqsFixIGVQg" className="mx-2 hover:text-yellow-600">
+            <BsYoutube />
           </a>
-          <a href="/" className="mx-2 hover:text-yellow-600">
+          <a href=" https://instagram.com/twprayerministry?igshid=MzRlODBiNWFlZA==" className="mx-2 hover:text-yellow-600">
             <BsInstagram />
           </a>
-          <a href="/" className="mx-2 hover:text-yellow-600">
+          <a href="https://www.facebook.com/profile.php?id=100066928100987" className="mx-2 hover:text-yellow-600">
             <BsFacebook />
           </a>
         </div>

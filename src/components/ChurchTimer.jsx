@@ -46,11 +46,11 @@ const ChurchTimer = () => {
   };
 
   return (
-    <div className="bg-gray-400 text-white h-[300px] flex justify-center items-center">
-      <div className="text-center">
+    <div className="bg-white text-blue-800 h-[600px] mt-[32rem] md:mt-[22rem] md:h-[400px] flex justify-center items-center ">
+      <div className="text-center items-center mx-auto  ">
         <h2 className="text-4xl font-bold mb-4"> Next Service Begins:</h2>
 
-        <div className="text-2xl text-blue-800 ">
+        <div className="text-6xl text-blue-800 my-5 ">
           <div className="flex justify-between gap-12 ">
             <div className="timer-item">
               <span className=''>{formatTimerValue(timeRemaining.days)}</span>

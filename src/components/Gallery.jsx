@@ -1,13 +1,13 @@
 import React from 'react';
 import worship1 from "../assets/church1.jpg";
-import worship2 from "../assets/church2.jpg";
+import worship2 from "../assets/churchpray.jpg";
 import worship3 from "../assets/church3.jpg";
 import worship4 from "../assets/church4.png";
 import worship5 from "../assets/prayer.avif";
 
 const Gallery = () => {
     return (
-        <div name='about' className='max-w-[1400] m-auto py-16 px-4 grid lg:grid-cols-2 gap-4'>
+        <div name='contact' className='max-w-[1400] m-auto py-16 px-4 grid lg:grid-cols-2 gap-4'>
             {/* left-side */}
              <div className='grid grid-cols-2 grid-rows-6 h-[200vh]'>
                 <img className='row-span-3 object-cover w-full h-full p-2' src={worship1} alt='/'/>
