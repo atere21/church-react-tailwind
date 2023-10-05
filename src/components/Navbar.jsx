@@ -7,7 +7,7 @@ import {
   FaYoutube,
 
 } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
