@@ -19,13 +19,14 @@ const Hero = () => {
           God loves you, and his arms are open wide to welcome people home. <br />
           <span className='text-blue-800'>You'll Never Walk Alone</span> 
           </p>
+      
           <a href='prayer'>
-          <button className='bg-[#120B48] w-[194px] h-[50px] cursor-pointer my-6 text-white p-4 rounded-md'>
+          <button className='bg-[#120B48] w-[221px] h-[70px] cursor-pointer my-6 text-white p-4 rounded-md'>
             Submit a prayer request
           </button>
           </a>
-          <HiArrowRight className='font-bold z-10 w-[20px] mx-[10.6em] absolute mt-[-3.3rem] text-white' />
-        </div>
+          
+           </div>
 
         <div className='imagesdiv grid relative mt-20'>
           <div className='grid grid-cols-2 grid-rows-6 h-[200vh] '>
