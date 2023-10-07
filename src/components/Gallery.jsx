@@ -4,10 +4,11 @@ import worship2 from "../assets/churchpray.jpg";
 import worship3 from "../assets/church3.jpg";
 import worship4 from "../assets/church4.png";
 import worship5 from "../assets/prayer.avif";
+import { Link } from 'react-scroll';
 
 const Gallery = () => {
     return (
-        <div name='contact' className='max-w-[1400] m-auto py-16 px-4 grid lg:grid-cols-2 gap-4'>
+        <div name='about' className='max-w-[1400] m-auto py-16 px-4 grid lg:grid-cols-2 gap-4'>
             {/* left-side */}
              <div className='grid grid-cols-2 grid-rows-6 h-[200vh]'>
                 <img className='row-span-3 object-cover w-full h-full p-2' src={worship1} alt='/'/>
@@ -29,9 +30,9 @@ const Gallery = () => {
                      <div>
              <p className='text-xl font-bold text-yellow-500'>New to The Word prayer ministries? </p>
             
-             <a href='/' target="_blank" rel="noopener noreferrer">
+             <Link to='footer' target="_blank" rel="noopener noreferrer">
              <button className=' text--white rounded-md p-2 my-2 w-40 mb-4 text-white cursor-pointer hover:bg-pink-300'>Connect With Us</button>
-             </a>
+             </Link>
     
             </div>
             </div>

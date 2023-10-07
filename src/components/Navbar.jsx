@@ -7,7 +7,8 @@ import {
   FaYoutube,
 
 } from 'react-icons/fa';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
+ 
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -20,27 +21,27 @@ const Navbar = () => {
     <div
     className='w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white shadow  bg-gray-700/80'>
       <ul className='hidden sm:flex px-4'>
-        <li>
-        <NavLink to="/home" activeClassName="active">
+        <li className='cursor-pointer hover:text-gray-300'>
+        <a href="/" activeClassName="active">
             Home
-          </NavLink>
+          </a>
          
         </li>
-        <li>
-         <NavLink to="/contact" activeClassName="active">
+        <li className='cursor-pointer hover:text-gray-300'>
+         <Link to="ChurchTimer"  activeClassName="active">
          Get Involved
-          </NavLink>
+          </Link>
         
         </li>
-        <li>
-        <NavLink to="/contact" activeClassName="active">
+        <li className='cursor-pointer hover:text-gray-300'>
+        <a href="/prayer" activeClassName="active">
          Prayer
-          </NavLink>
+          </a>
         </li>
-        <li>
-        <NavLink to="/contact" activeClassName="active">
+        <li className='cursor-pointer hover:text-gray-300'>
+        <Link to="about" activeClassName="active">
           About Us
-          </NavLink>
+          </Link>
         </li>
         
       </ul>
@@ -73,7 +74,7 @@ const Navbar = () => {
             <a href='/'>Home</a>
           </li>
           <li className='text-2xl py-8'>
-            <a href='#gallery'>Get Involved</a>
+            <a href='/contact'>Get Involved</a>
           </li>
           <li className='text-2xl py-8'>
             <a href='#deals'>Prayer</a>

@@ -46,7 +46,7 @@ const ChurchTimer = () => {
   };
 
   return (
-    <div className="bg-white text-blue-800 h-[600px] mt-[32rem] md:mt-[22rem] md:h-[400px] flex justify-center items-center ">
+    <div name="ChurchTimer" className="bg-white text-blue-800 h-[600px] mt-[32rem] md:mt-[22rem] md:h-[400px] flex justify-center items-center ">
       <div className="text-center items-center mx-auto  ">
         <h2 className="text-4xl font-bold mb-4"> Next Service Begins:</h2>
 
