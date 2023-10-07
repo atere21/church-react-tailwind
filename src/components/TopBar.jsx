@@ -21,7 +21,7 @@ const TopBar = () => {
           <p className='text-sm text-gray-700'>+447496021086</p>
         </div>
         <a href='/prayer'>
-        <button>Submit a prayer request</button>
+        <button>Submit prayer request</button>
         </a>
       </div>
     </div>
