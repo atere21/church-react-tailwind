@@ -32,8 +32,8 @@ const Hero = () => {
             <img className='row-span-1 object-cover p-2 w-full h-full z-10' src={image1} alt='/' />
             <img className='row-span-2 object-cover p-2 w-full h-full z-10 relative' src={image3} alt='/' />
             <img className='row-span-1 object-cover p-2 w-full h-full z-10' src={image2} alt='/' />
-            <img className='absolute bottom-[72%] left-[18%] transform translate-x-[-50%] translate-y-[50%] z-0' src={pointer2} alt='pointer2' />
-            <img className='absolute bottom-[92%] left-[80%] transform translate-x-[-50%] translate-y-[50%] z-0' src={pressing2} alt='pointer2' />
+            <img className='absolute bottom-[72%] left-[18%] transform translate-x-[-50%] translate-y-[50%] z-0 hidden md:block' src={pointer2} alt='pointer2' />
+            <img className='absolute bottom-[92%] left-[80%] transform translate-x-[-50%] translate-y-[50%] z-0 hidden md:block' src={pressing2} alt='pointer2' />
          
           </div>
         </div>

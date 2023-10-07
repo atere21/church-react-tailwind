@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+
 const ChurchTimer = () => {
   // Initialize the state for the countdown timer
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
@@ -46,11 +47,12 @@ const ChurchTimer = () => {
   };
 
   return (
-    <div name="ChurchTimer" className="bg-white text-blue-800 h-[600px] mt-[32rem] md:mt-[22rem] md:h-[400px] flex justify-center items-center ">
-      <div className="text-center items-center mx-auto  ">
+    <div name="ChurchTimer" className="bg-white  text-blue-800 h-[600px] mt-[32rem] md:mt-[22rem] md:h-[400px]
+     flex justify-center items-center w-full">
+      <div className="text-center items-center mx-auto mx-{2rem} ">
         <h2 className="text-4xl font-bold mb-4"> Next Service Begins:</h2>
 
-        <div className="text-6xl text-blue-800 my-5 ">
+        <div className="md:text-6xl text-2xl text-blue-800 my-5 ">
           <div className="flex justify-between gap-12 ">
             <div className="timer-item">
               <span className=''>{formatTimerValue(timeRemaining.days)}</span>
