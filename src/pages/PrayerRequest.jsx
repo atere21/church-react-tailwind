@@ -47,7 +47,8 @@ function PrayerRequest() {
     
       <div className="bg-white md:min-w-[860px] rounded-md overflow-hidden shadow-lg mt-[6rem] mb-8">
         <h1 className="text-4xl font-semibold p-6 text-center bg-[#5651e5] text-white">Prayer Requests</h1>
-        <form onSubmit={handleSubmit} className="p-6 space-y-4">
+        <form action="https://getform.io/f/184c2acc-90fb-4ead-9cdc-ed9cafd676a5" method="POST"
+          className="p-6 space-y-4">
           <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label htmlFor="whoNeedsPrayers" className="block font-semibold text-xl">Who Needs Prayers?</label>

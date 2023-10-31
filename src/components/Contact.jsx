@@ -11,14 +11,16 @@ const Contact = () => {
           alt='/'
           className='w-full md:h-full object-cover p-2 max-h-[500px] h-[200px]'
         />
-        <form>
+      
+        <form action="https://getform.io/f/184c2acc-90fb-4ead-9cdc-ed9cafd676a5" method="POST">
+      
           <div className='grid grid-cols-2'>
-            <input className='border m-2 p-2' type='text' placeholder='First' />
-            <input className='border m-2 p-2' type='text' placeholder='Last' />
-            <input className='border m-2 p-2' type='email' placeholder='Email' />
-            <input className='border m-2 p-2' type='tel' placeholder='Phone' />
-            <input className='border col-span-2 p-2 m-2' type='text' placeholder='Address'/>
-            <textarea className='border col-span-2 m-2 p-2 resize-none' cols='30' rows='10'></textarea>
+            <input className='border m-2 p-2' name='first' type='text' placeholder='First' />
+            <input className='border m-2 p-2' name='last' type='text' placeholder='Last' />
+            <input className='border m-2 p-2' name='email' type='email' placeholder='Email' />
+            <input className='border m-2 p-2' name='phone' type='tel' placeholder='Phone' />
+            <input className='border col-span-2 p-2 m-2' name='text' type='text' placeholder='Address'/>
+            <textarea className='border col-span-2 m-2 p-2 resize-none' name='textarea' cols='30' rows='10'></textarea>
             <button className='col-span-2 m-2'>Submit</button>
           </div>
         </form>
